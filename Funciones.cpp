@@ -3,7 +3,9 @@
 //
 
 #include "Funciones.h"
-void rellenarArbol(ArbolBinario<string>& arbol, int&contadorPalabra,int &contadorLetra, int&contadorLineas,string nombreFile){
+
+void rellenarArbol(ArbolBinarioAVL<string>& arbol, int&contadorPalabra,int &contadorLetra, int&contadorLineas,string nombreFile){ // Rellenamos nuestro ArbolAVL
+                                                                                                                                // con las palabras en el texto
     ifstream file;
     string auxiliar;
     string renglon;
@@ -18,7 +20,10 @@ void rellenarArbol(ArbolBinario<string>& arbol, int&contadorPalabra,int &contado
             }
             getline(file, renglon);
             for(int i = 0; i < renglon.size();i++){
-                if(renglon[i] !='(' && renglon[i] !=')'  && renglon[i] != '.' && renglon[i] != ',' && renglon[i] != ' ' && renglon[i] != ';' && renglon[i] != '['  && renglon[i] != ']'){
+                if(renglon[i] !='(' && renglon[i] !=')'  && renglon[i] != '.' && renglon[i] != ','
+                && renglon[i] != ' ' && renglon[i] != ';' && renglon[i] != '['  && renglon[i] != ']'    // Caracteres a evitar de ASCII
+                && renglon[i] != 39 && renglon[i] != '?' && renglon[i] != ':' && renglon[i] != '='
+                && renglon[i] != 34 && renglon[i] != 38 && renglon[i] != '!' && renglon[i] != '-'){
                     contadorLetra++;
                     auxiliar.push_back(tolower(renglon[i]));
                 }else if(auxiliar != ""){
@@ -30,7 +35,7 @@ void rellenarArbol(ArbolBinario<string>& arbol, int&contadorPalabra,int &contado
         }
     }
     else{
-        cout<<"No abrio archivo"<<endl;
+        throw 300;
     }
     cout << "Contador Letras: " << contadorLetra << endl;
     cout << "Contador Palabras: " << contadorPalabra << endl;
@@ -40,7 +45,7 @@ void rellenarArbol(ArbolBinario<string>& arbol, int&contadorPalabra,int &contado
     cout << "Cantidad de palabras distintas: " << arbol.contarNodos() << endl;
 }
 
-void excluirf(string nombreFile,ArbolBinario<string>&arbol){
+void excluirf(string nombreFile,ArbolBinarioAVL<string>&arbol){
     ifstream ignoreFile;
     string auxiliar,renglon;
     ignoreFile.open(nombreFile, ios::in);
@@ -52,19 +57,24 @@ void excluirf(string nombreFile,ArbolBinario<string>&arbol){
             }
             getline(ignoreFile, renglon);
             for (int i = 0; i < renglon.size(); i++) {
-                if (renglon[i] !='(' && renglon[i] !=')'  && renglon[i] != '.' && renglon[i] != ',' && renglon[i] != ' ' && renglon[i] != ';' && renglon[i] != '['  && renglon[i] != ']') {
+                if (renglon[i] !='(' && renglon[i] !=')'  && renglon[i] != '.' && renglon[i] != ',' && renglon[i] != ' '
+                && renglon[i] != ';' && renglon[i] != '['  && renglon[i] != ']' && renglon[i] != 39 && renglon[i] != '?'
+                && renglon[i] != ':' && renglon[i] != '=' && renglon[i] != 34 && renglon[i] != 38 && renglon[i] != '!'
+                && renglon[i] != '-') {
                     auxiliar.push_back(tolower(renglon[i]));
                 } else if (auxiliar != "") {
-                    arbol.searchAndIgnore(auxiliar);
-                    auxiliar = "";
+                    arbol.searchAndIgnore(auxiliar);  // El metodo searchAndIgnore cambia de estado el atributo "evitar" del nodo arbol a true
+                    auxiliar = "";                              // Asi cuando se necesite imprimir la palabra en la funcion ocurrencias se ignora si el valor es true
                 }
 
             }
         }
+    }else{
+        throw 400;
     }
 }
 
-void palabras(int n,ArbolBinario<string>& arbol){
+void palabras(int n,ArbolBinarioAVL<string>& arbol){
     string ordenado;
     cout << "ORDEN ALFABETICO PALABRAS DIFERENTES: " << endl;
     if(n==0){
@@ -90,7 +100,7 @@ void mostarNpalabrasString(string palabras, int n){
     cout<<endl;
 }
 
-void ocurrencias(int n, ArbolBinario<string>&arbol, Lista<string>*arregloLista, int maxOcurrencias){
+void ocurrencias(int n, ArbolBinarioAVL<string>&arbol, Lista<string>*arregloLista, int maxOcurrencias){
 
     if(n==0){
         for(int i = maxOcurrencias-1; i >= 0; i--){
@@ -111,7 +121,7 @@ void ocurrencias(int n, ArbolBinario<string>&arbol, Lista<string>*arregloLista, 
         }
     }
 }
-void mostrar(string argumento, ArbolBinario<string>&arbol){
+void mostrar(string argumento, ArbolBinarioAVL<string>&arbol){
     string auxiliar="";
 
     cout <<"Argumento mostrar: " <<argumento<<endl;
@@ -126,7 +136,7 @@ void mostrar(string argumento, ArbolBinario<string>&arbol){
     }
 }
 
-void excluir(string argumento, ArbolBinario<string>&arbol){
+void excluir(string argumento, ArbolBinarioAVL<string>&arbol){
     string auxiliar="";
 
     for (int i = 0; i < argumento.size(); i++) {

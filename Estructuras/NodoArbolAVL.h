@@ -1,32 +1,33 @@
-#ifndef U05_ARBOL_ARBOL_NODOARBOL_H_
-#define U05_ARBOL_ARBOL_NODOARBOL_H_
-
-#include <string.h>
+#ifndef U05_ARBOL_ARBOL_NODOARBOLAVL_H_
+#define U05_ARBOL_ARBOL_NODOARBOLAVL_H_
 #include <iostream>
-#include <cstddef>
+#include <string.h>
 using namespace std;
 
 template <class T>
-class NodoArbol
+class NodoArbolAVL
 {
 private:
   T data;
   int ocurrencias = 1;
   bool evitar = false;
-  NodoArbol *left, *right;
+  NodoArbolAVL *left, *right;
+  int height;
 
 public:
-  NodoArbol()
+  NodoArbolAVL()
   {
     left = nullptr;
     right = nullptr;
+    height=1;
   }
 
-  NodoArbol(T d)
+  NodoArbolAVL(T d)
   {
     data = d;
     left = nullptr;
     right = nullptr;
+    height = 1;
   }
 
   T getData() const
@@ -39,26 +40,34 @@ public:
     this->data = d;
   }
 
-  NodoArbol *getRight() const
+  NodoArbolAVL *getRight() const
   {
     return right;
   }
 
-  void setRight(NodoArbol *r)
+  void setRight(NodoArbolAVL *r)
   {
     this->right = r;
   }
-  NodoArbol *getLeft() const
+  NodoArbolAVL *getLeft() const
   {
     return left;
   }
 
-  void setLeft(NodoArbol *l)
+  void setLeft(NodoArbolAVL *l)
   {
     this->left = l;
   }
 
-   void print(bool esDerecho, string identacion) {
+  int getHeight(){
+    return height;
+  }
+
+  void setHeight(int h){
+    height = h;
+  }
+
+  void print(bool esDerecho, string identacion) {
     if (right != NULL) {
         right->print(true, identacion + (esDerecho ? "     " : "|    "));
     }
@@ -73,24 +82,24 @@ public:
     if (left != NULL) {
         left->print(false, identacion + (esDerecho ? "|    " : "     "));
     }
-  }
+}
 
-  int getOcurrencias(){
-      return ocurrencias;
-  }
+    int getOcurrencias(){
+        return ocurrencias;
+    }
 
-  void incrementarOcurrencia(){
-      ocurrencias++;
-  }
+    void incrementarOcurrencia(){
+        ocurrencias++;
+    }
 
-  bool debeEvitar(){
-      return evitar;
-  }
+    bool debeEvitar(){
+        return evitar;
+    }
 
-  void Evitar(){
-      evitar = true;
-  }
+    void Evitar(){
+        evitar = true;
+    }
 
-  };
+};
 
-#endif // U05_ARBOL_ARBOL_NODOARBOL_H_
+#endif // U05_ARBOL_ARBOL_NODOARBOLAVL_H_

@@ -8,17 +8,17 @@
 #include <string>
 #include <vector>
 #include <fstream>
-#include "Estructuras/ArbolBinario.h"
+#include "Estructuras/ArbolBinarioAVL.h"
 #include "Estructuras/Lista.h"
 
 using namespace std;
 
-void rellenarArbol(ArbolBinario<string>& arbol, int&contadorPalabra,int &contadorLetra, int&contadorLineas,string nombreFile);
-void excluirf(string nombreFile, ArbolBinario<string>&arbol);
-void palabras(int n, ArbolBinario<string>& arbol);
-void ocurrencias(int n, ArbolBinario<string>&arbol, Lista<string>*lista, int maxOcurrencias);
-void mostrar(string argumento, ArbolBinario<string>&arbol);
+void rellenarArbol(ArbolBinarioAVL<string>& arbol, int&contadorPalabra, int &contadorLetra, int&contadorLineas, string nombreFile);
+void excluirf(string nombreFile, ArbolBinarioAVL<string>&arbol);
+void palabras(int n, ArbolBinarioAVL<string>& arbol);
+void ocurrencias(int n, ArbolBinarioAVL<string>&arbol, Lista<string>*lista, int maxOcurrencias);
+void mostrar(string argumento, ArbolBinarioAVL<string>&arbol);
 void mostarNpalabrasString(string palabras, int n);
-void excluir(string argumento, ArbolBinario<string>&arbol);
+void excluir(string argumento, ArbolBinarioAVL<string>&arbol);
 
 #endif //PRUEBA_PARCIAL_2_FUNCIONES_H

@@ -3,9 +3,10 @@
 #include <string>
 #include <vector>
 #include <fstream>
-#include "Estructuras/ArbolBinario.h"
+#include "Estructuras/ArbolBinarioAVL.h"
 #include "Estructuras/Lista.h"
 #include "Funciones.h"
+#include <stdexcept>
 
 using namespace std;
 
@@ -15,9 +16,14 @@ int main(int argc, char ** argv) {
 
     cout << "Comenzando a medir Tiempo\n" << endl;
 
-    ArbolBinario<string> arbol;
-    string nombreFile="/Users/mussa/Documents/Universidad/Programacion_III/prueba-parcial-2/";
-    string nombreIgnore="/Users/mussa/Documents/Universidad/Programacion_III/prueba-parcial-2/";
+    if(argc < 2){
+        cout << "Argumentos de consola insuficiente" << endl;
+        exit(2);
+    }
+
+    ArbolBinarioAVL<string> arbol;
+    string nombreFile="C:\\Users\\win10\\Desktop\\Parcial2Programacion-AVL\\";
+    string nombreIgnore="C:\\Users\\win10\\Desktop\\Parcial2Programacion-AVL\\";
     int contadorPalabra = 0, contadorLetra = 0, contadorLineas = 0;
     int aux;
     string aux_comandos,aux_comandos2;
@@ -27,16 +33,14 @@ int main(int argc, char ** argv) {
 
 
     try{
-        prueba_error.open(aux_comandos2,ios::in);
-        if(!prueba_error.is_open()) throw 404;
-        else prueba_error.close();
+        rellenarArbol(arbol,contadorPalabra,contadorLetra,contadorLineas,aux_comandos2);
     }
     catch(int error){
-        cout<<"No se ha provisto un archivo de texto con el cual trabajar."<<endl;
-        exit(404);
+        cout<<"No se ha provisto un archivo de texto con el cual trabajar o el archivo de texto es invalido"<<endl;
+        exit(300);
     }
 
-    rellenarArbol(arbol,contadorPalabra,contadorLetra,contadorLineas,aux_comandos2);
+
 
     int maxOcurrencias = arbol.maxOcurrencia();
     Lista<string> arregloLista[maxOcurrencias];
@@ -45,49 +49,80 @@ int main(int argc, char ** argv) {
        aux_comandos = argv[i];
 
        if(aux_comandos=="palabras"){
-           aux = stoi(argv[i+1]);
-           palabras(aux,arbol);
+           try {
+               aux = stoi(argv[i + 1]);
+               palabras(aux, arbol);
+           }catch(std::invalid_argument &error){
+                palabras(0, arbol);
+           }catch(std::logic_error &error){
+               palabras(0, arbol);
+           }
        }
 
         if(aux_comandos=="excluirf"){
-            aux_comandos2 = nombreIgnore+argv[i+1];
-            excluirf(aux_comandos2,arbol);
+            try {
+                if(i+1 >= argc){
+                    throw 404;
+                }
+                aux_comandos2 = nombreIgnore + argv[i + 1];
+                cout << aux_comandos2;
+                excluirf(aux_comandos2, arbol);
+            }catch(int error){
+                if(error == 404){
+                cout << "No se encontro archivo" << endl;
+                exit(404);
+                }else{
+                    cout << " No se recibio un archivo valido" << endl;
+                    exit(400);
+                }
+            }
         }
 
         if(aux_comandos=="ocurrencias"){
-            aux = stoi(argv[i+1]);
-            arbol.generarLista(arregloLista);
-            ocurrencias(aux,arbol,arregloLista,maxOcurrencias);
+            try {
+                arbol.generarLista(arregloLista);
+                aux = stoi(argv[i + 1]);
+                ocurrencias(aux, arbol, arregloLista, maxOcurrencias);
+            }catch(std::invalid_argument &error){
+                ocurrencias(0, arbol, arregloLista, maxOcurrencias);
+            }catch(std::logic_error &error){
+                ocurrencias(0, arbol, arregloLista, maxOcurrencias);
+
+            }
         }
 
         if(aux_comandos=="mostrar"){
-            aux_comandos2=argv[i+1];
-            mostrar(aux_comandos2,arbol);
+            try {
+                if(i+1 >= argc){
+                    throw 400;
+                }
+                aux_comandos2 = argv[i + 1];
+                mostrar(aux_comandos2, arbol);
+            }catch(int &error){
+                if(error == 400) {
+                    cout << "Argumento consola Invalido" << endl;
+                    exit(400);
+                }
+            }
         }
 
         if(aux_comandos=="excluir"){
-            aux_comandos2=argv[i+1];
-            excluir(aux_comandos2,arbol);
+            try {
+                if(i+1 >= argc){
+                    throw 400;
+                }
+                aux_comandos2 = argv[i + 1];
+                excluir(aux_comandos2, arbol);
+            }catch(int &error){
+                if(error == 400) {
+                    cout << "Argumento consola Invalido" << endl;
+                    exit(400);
+                }
+            }
         }
     }
 
-
-/*
-    rellenarArbol(arbol,contadorPalabra,contadorLetra,contadorLineas,nombreFile);
-    palabras(0,arbol);
-
-    excluirf(nombreIgnore,arbol);
-
-
-    int maxOcurrencias = arbol.maxOcurrencia();
-    Lista<string> arregloLista[maxOcurrencias];
-    arbol.generarLista(arregloLista);
-
-    ocurrencias(0,arbol,arregloLista,maxOcurrencias);
-
-*/
-
-
+    cout << "\nTerminar Medir Tiempo" << endl;
     clock_t end = clock();
 
     double elapsed_secs = static_cast<double>(end - begin) / CLOCKS_PER_SEC;

@@ -82,10 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/win10/Desktop/Parcial2Programacion-AVL/Estructuras/ArbolBinario.h">
-			<Option target="U00-E06"/>
-		</Unit>
-		<Unit filename="C:/Users/win10/Desktop/Parcial2Programacion-AVL/Estructuras/Cola.h">
+		<Unit filename="C:/Users/win10/Desktop/Parcial2Programacion-AVL/Estructuras/ArbolBinarioAVL.h">
 			<Option target="U00-E06"/>
 		</Unit>
 		<Unit filename="C:/Users/win10/Desktop/Parcial2Programacion-AVL/Estructuras/ColaPrioridad.h">
@@ -97,19 +94,13 @@
 		<Unit filename="C:/Users/win10/Desktop/Parcial2Programacion-AVL/Estructuras/HashMap.h">
 			<Option target="U00-E06"/>
 		</Unit>
-		<Unit filename="C:/Users/win10/Desktop/Parcial2Programacion-AVL/Estructuras/HashMapList.h">
-			<Option target="U00-E06"/>
-		</Unit>
 		<Unit filename="C:/Users/win10/Desktop/Parcial2Programacion-AVL/Estructuras/Lista.h">
 			<Option target="U00-E06"/>
 		</Unit>
 		<Unit filename="C:/Users/win10/Desktop/Parcial2Programacion-AVL/Estructuras/Nodo.h">
 			<Option target="U00-E06"/>
 		</Unit>
-		<Unit filename="C:/Users/win10/Desktop/Parcial2Programacion-AVL/Estructuras/NodoArbol.h">
-			<Option target="U00-E06"/>
-		</Unit>
-		<Unit filename="C:/Users/win10/Desktop/Parcial2Programacion-AVL/Estructuras/Pila.h">
+		<Unit filename="C:/Users/win10/Desktop/Parcial2Programacion-AVL/Estructuras/NodoArbolAVL.h">
 			<Option target="U00-E06"/>
 		</Unit>
 		<Unit filename="C:/Users/win10/Desktop/Parcial2Programacion-AVL/Estructuras/nodoPrioridad.h">
