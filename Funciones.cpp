@@ -126,7 +126,7 @@ void mostrar(string argumento, ArbolBinarioAVL<string>&arbol){
 
     cout <<"Argumento mostrar: " <<argumento<<endl;
     for (int i = 0; i < argumento.size(); i++) {
-        if (argumento[i] != '.' && argumento[i] != ',') {
+        if (argumento[i] != '.' && argumento[i] != ',' && argumento[i] != ' ') {
             auxiliar.push_back(tolower(argumento[i]));
         } else if (auxiliar != "") {
             arbol.searchAndPrint(auxiliar);
