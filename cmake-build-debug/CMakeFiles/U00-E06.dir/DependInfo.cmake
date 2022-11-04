@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/win10/Desktop/Parcial2Programacion-AVL/main.cpp" "CMakeFiles/U00-E06.dir/main.cpp.obj" "gcc" "CMakeFiles/U00-E06.dir/main.cpp.obj.d"
+  "C:/Users/mbarb/Escritorio/Parcial2Programacion-AVL/main.cpp" "CMakeFiles/U00-E06.dir/main.cpp.obj" "gcc" "CMakeFiles/U00-E06.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

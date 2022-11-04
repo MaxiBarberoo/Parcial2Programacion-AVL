@@ -20,10 +20,7 @@ void rellenarArbol(ArbolBinarioAVL<string>& arbol, int&contadorPalabra,int &cont
             }
             getline(file, renglon);
             for(int i = 0; i < renglon.size();i++){
-                if(renglon[i] !='(' && renglon[i] !=')'  && renglon[i] != '.' && renglon[i] != ','
-                && renglon[i] != ' ' && renglon[i] != ';' && renglon[i] != '['  && renglon[i] != ']'    // Caracteres a evitar de ASCII
-                && renglon[i] != 39 && renglon[i] != '?' && renglon[i] != ':' && renglon[i] != '='
-                && renglon[i] != 34 && renglon[i] != 38 && renglon[i] != '!' && renglon[i] != '-'){
+                if((renglon[i] >= 65 && renglon[i] <= 90) || (renglon[i] >= 97 && renglon[i] <= 122)){
                     contadorLetra++;
                     auxiliar.push_back(tolower(renglon[i]));
                 }else if(auxiliar != ""){
@@ -57,10 +54,7 @@ void excluirf(string nombreFile,ArbolBinarioAVL<string>&arbol){
             }
             getline(ignoreFile, renglon);
             for (int i = 0; i < renglon.size(); i++) {
-                if (renglon[i] !='(' && renglon[i] !=')'  && renglon[i] != '.' && renglon[i] != ',' && renglon[i] != ' '
-                && renglon[i] != ';' && renglon[i] != '['  && renglon[i] != ']' && renglon[i] != 39 && renglon[i] != '?'
-                && renglon[i] != ':' && renglon[i] != '=' && renglon[i] != 34 && renglon[i] != 38 && renglon[i] != '!'
-                && renglon[i] != '-') {
+                if (renglon[i] >= 65 && renglon[i] <= 90 && renglon[i] >= 97 && renglon[i] <= 122) {
                     auxiliar.push_back(tolower(renglon[i]));
                 } else if (auxiliar != "") {
                     arbol.searchAndIgnore(auxiliar);  // El metodo searchAndIgnore cambia de estado el atributo "evitar" del nodo arbol a true

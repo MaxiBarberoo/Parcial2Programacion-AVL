@@ -22,8 +22,8 @@ int main(int argc, char ** argv) {
     }
 
     ArbolBinarioAVL<string> arbol;
-    string nombreFile="C:\\Users\\win10\\Desktop\\Parcial2Programacion-AVL\\";
-    string nombreIgnore="C:\\Users\\win10\\Desktop\\Parcial2Programacion-AVL\\";
+    string nombreFile="C:\\Users\\mbarb\\Escritorio\\Parcial2Programacion-AVL\\";
+    string nombreIgnore="C:\\Users\\mbarb\\Escritorio\\Parcial2Programacion-AVL\\";
     int contadorPalabra = 0, contadorLetra = 0, contadorLineas = 0;
     int aux;
     string aux_comandos,aux_comandos2;
