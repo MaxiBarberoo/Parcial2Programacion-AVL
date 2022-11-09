@@ -53,7 +53,7 @@ int main(int argc, char ** argv) {
 
        if(aux_comandos=="palabras"){
            try {
-               if(i+1 >= argc){
+               if((i+1) >= argc){
                    throw 404;
                }
                aux = stoi(argv[i + 1]);
@@ -69,7 +69,7 @@ int main(int argc, char ** argv) {
 
         if(aux_comandos=="excluirf"){
             try {
-                if(i+1 >= argc){
+                if((i+1) >= argc){
                     throw 404;
                 }
                 aux_comandos2 = nombreIgnore + argv[i + 1];
@@ -88,10 +88,10 @@ int main(int argc, char ** argv) {
 
         if(aux_comandos=="ocurrencias"){
             try {
-                if(i+1 >= argc){
+                arbol.generarLista(arregloLista);
+                if((i+1) >= argc){
                     throw 404;
                 }
-                arbol.generarLista(arregloLista);
                 aux = stoi(argv[i + 1]);
                 ocurrencias(aux, arbol, arregloLista, maxOcurrencias);
             }catch(std::invalid_argument &error){

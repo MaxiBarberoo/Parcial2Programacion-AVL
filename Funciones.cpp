@@ -155,6 +155,11 @@ void ocurrencias(int n, ArbolBinarioAVL<string>&arbol, Lista<string>*arregloList
             }
         }
     }
+
+    for(int i=0;i<maxOcurrencias;i++){
+        arregloLista[i].vaciar();
+    }
+
 }
 void mostrar(string argumento, ArbolBinarioAVL<string>&arbol){
 
