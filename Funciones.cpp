@@ -168,10 +168,12 @@ void mostrar(string argumento, ArbolBinarioAVL<string>&arbol){
      */
     string auxiliar="";
 
-    cout <<"Argumento mostrar: " <<argumento<<endl;
     for (int i = 0; i < argumento.size(); i++) {
         if (argumento[i] != '.' && argumento[i] != ',' && argumento[i] != ' ') {
             auxiliar.push_back(tolower(argumento[i]));
+            if(argumento[i]==-61 || argumento[i]==-79){
+                i++;
+            }
         } else if (auxiliar != "") {
             arbol.searchAndPrint(auxiliar);
             auxiliar = "";
@@ -192,6 +194,9 @@ void excluir(string argumento, ArbolBinarioAVL<string>&arbol){
     for (int i = 0; i < argumento.size(); i++) {
         if (argumento[i] != '.' && argumento[i] != ',' && argumento[i]!=' ') {
             auxiliar.push_back(tolower(argumento[i]));
+            if(argumento[i]==-61 || argumento[i]==-79){
+                i++;
+            }
         } else if (auxiliar != "") {
             arbol.searchAndIgnore(auxiliar);
             auxiliar = "";

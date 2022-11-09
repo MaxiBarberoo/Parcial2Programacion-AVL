@@ -75,7 +75,7 @@ int main(int argc, char ** argv) {
                 aux_comandos2 = nombreIgnore + argv[i + 1];
                 cout << aux_comandos2;
                 excluirf(aux_comandos2, arbol);
-            }catch(int error){
+            }catch(int&error){
                 if(error == 404){
                 cout << "No se encontro archivo" << endl;
                 exit(404);
