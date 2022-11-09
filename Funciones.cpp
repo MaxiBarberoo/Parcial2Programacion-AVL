@@ -190,7 +190,7 @@ void excluir(string argumento, ArbolBinarioAVL<string>&arbol){
     string auxiliar="";
 
     for (int i = 0; i < argumento.size(); i++) {
-        if (argumento[i] != '.' && argumento[i] != ',') {
+        if (argumento[i] != '.' && argumento[i] != ',' && argumento[i]!=' ') {
             auxiliar.push_back(tolower(argumento[i]));
         } else if (auxiliar != "") {
             arbol.searchAndIgnore(auxiliar);

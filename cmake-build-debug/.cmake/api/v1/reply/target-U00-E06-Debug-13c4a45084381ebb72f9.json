@@ -85,11 +85,7 @@
 				2,
 				3,
 				4,
-				5,
-				6,
-				7,
-				8,
-				9
+				5
 			]
 		}
 	],
@@ -108,16 +104,6 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Estructuras/HashEntry.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Estructuras/HashMap.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
 			"path" : "Estructuras/Lista.h",
 			"sourceGroupIndex" : 1
 		},
@@ -129,16 +115,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "Estructuras/NodoArbolAVL.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Estructuras/ColaPrioridad.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Estructuras/nodoPrioridad.h",
 			"sourceGroupIndex" : 1
 		},
 		{

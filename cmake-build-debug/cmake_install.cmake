@@ -1,4 +1,4 @@
-# Install script for directory: /Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL
+# Install script for directory: /Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

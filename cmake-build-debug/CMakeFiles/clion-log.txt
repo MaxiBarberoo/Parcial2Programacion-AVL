@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL -B /Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212 -B /Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug
 CMake Warning (dev) in CMakeLists.txt:
   No project() command is present.  The top-level CMakeLists.txt file must
   contain a literal, direct call to the project() command.  Add a line of
@@ -26,4 +26,4 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug
+-- Build files have been written to: /Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug

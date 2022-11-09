@@ -35,7 +35,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "U00-E06::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-U00-E06-Debug-cfc084e4326d760db855.json",
+					"jsonFile" : "target-U00-E06-Debug-13c4a45084381ebb72f9.json",
 					"name" : "U00-E06",
 					"projectIndex" : 0
 				}
@@ -45,8 +45,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug",
-		"source" : "/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL"
+		"build" : "/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug",
+		"source" : "/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212"
 	},
 	"version" : 
 	{

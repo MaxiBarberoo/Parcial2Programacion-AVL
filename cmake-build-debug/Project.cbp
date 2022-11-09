@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug"/>
+				<Option working_dir="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="U00-E06">
-				<Option output="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/U00-E06" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug"/>
+				<Option output="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/U00-E06" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
@@ -31,15 +31,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 U00-E06"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 U00-E06"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="U00-E06/fast">
-				<Option output="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/U00-E06" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug"/>
+				<Option output="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/U00-E06" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
@@ -51,64 +51,52 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 U00-E06/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 U00-E06/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug"/>
+				<Option working_dir="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug"/>
+				<Option working_dir="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/Estructuras/ArbolBinarioAVL.h">
+		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/Estructuras/ArbolBinarioAVL.h">
 			<Option target="U00-E06"/>
 		</Unit>
-		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/Estructuras/ColaPrioridad.h">
+		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/Estructuras/Lista.h">
 			<Option target="U00-E06"/>
 		</Unit>
-		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/Estructuras/HashEntry.h">
+		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/Estructuras/Nodo.h">
 			<Option target="U00-E06"/>
 		</Unit>
-		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/Estructuras/HashMap.h">
+		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/Estructuras/NodoArbolAVL.h">
 			<Option target="U00-E06"/>
 		</Unit>
-		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/Estructuras/Lista.h">
+		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/Funciones.h">
 			<Option target="U00-E06"/>
 		</Unit>
-		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/Estructuras/Nodo.h">
+		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/main.cpp">
 			<Option target="U00-E06"/>
 		</Unit>
-		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/Estructuras/NodoArbolAVL.h">
-			<Option target="U00-E06"/>
-		</Unit>
-		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/Estructuras/nodoPrioridad.h">
-			<Option target="U00-E06"/>
-		</Unit>
-		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/Funciones.h">
-			<Option target="U00-E06"/>
-		</Unit>
-		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/main.cpp">
-			<Option target="U00-E06"/>
-		</Unit>
-		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/CMakeLists.txt">
+		<Unit filename="/Users/mussa/Documents/Universidad/Programacion_III/c1-8a11hs-entregaparcial2-Mussa212/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
