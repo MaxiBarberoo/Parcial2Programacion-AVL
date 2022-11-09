@@ -355,7 +355,9 @@ void ArbolBinarioAVL<T>::inorder(NodoArbolAVL<T> *r)
   }
 
   inorder(r->getLeft());
-  std::cout << r->getData() << " ";
+  if(!r->debeEvitar()){
+      std::cout << r->getData() << " ";
+  }
   inorder(r->getRight());
 }
 
@@ -471,6 +473,11 @@ void ArbolBinarioAVL<T>::searchAndIgnore(T datoIgnore) {
 
 template<class T>
 void ArbolBinarioAVL<T>::searchAndIgnore(T datoIgnore, NodoArbolAVL<T> *r) {
+
+    /*
+     * Este metodo busca el dato solicitado y cambia el booleano del nodo arbol a true.
+     * Lo que produce que el metodo de ocurrencias lo ignore.
+     */
     if (r == nullptr)
     {
         cout << "No se encontro la palabra " << datoIgnore << " en el texto" << endl;
@@ -501,6 +508,11 @@ int ArbolBinarioAVL<T>::maxOcurrencia() {
 
 template<class T>
 int ArbolBinarioAVL<T>::maxOcurrencia(int &max, NodoArbolAVL<T> *r) {
+
+    /*
+     * Este metodo busca la maxima cantidad de ocurrencias en el arbol para crear
+     * la lista utilizada en la funcion ocurrencias.
+     */
     if(r == nullptr){
         return max;
     }
@@ -524,6 +536,11 @@ void ArbolBinarioAVL<T>::generarLista(Lista<T> *lista) {
 
 template<class T>
 void ArbolBinarioAVL<T>::generarLista(Lista<T> *lista, NodoArbolAVL<T> *r) {
+
+    /*
+     * Este metodo genera una lista para la funcion ocurrencias.
+     * Si el booleano evitar es true en el nodo del arbol, no se lo ingresa a la lista.
+     */
     Lista<T> *auxLista;
     if(r == nullptr){
         return;
@@ -540,13 +557,19 @@ void ArbolBinarioAVL<T>::generarLista(Lista<T> *lista, NodoArbolAVL<T> *r) {
 
 template<class T>
 void ArbolBinarioAVL<T>::inorderNpalabras(string& ordenado, NodoArbolAVL<T>*r) {
+
+    /*
+     * Se introducen las palabras contenidas en el arbol en un string que luego va a ser impreso.
+     */
     if (r == nullptr)
     {
         return;
     }
 
     inorderNpalabras(ordenado, r->getLeft());
-    ordenado+= r->getData() + " ";
+    if(!r->debeEvitar()){
+        ordenado+= r->getData() + " ";
+    }
     inorderNpalabras(ordenado, r->getRight());
 }
 

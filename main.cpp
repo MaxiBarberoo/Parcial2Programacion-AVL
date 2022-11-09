@@ -17,21 +17,24 @@ int main(int argc, char ** argv) {
     cout << "Comenzando a medir Tiempo\n" << endl;
 
     if(argc < 2){
-        cout << "Argumentos de consola insuficiente" << endl;
+        cout << "Argumentos de consola insuficientes" << endl;
         exit(2);
     }
 
     ArbolBinarioAVL<string> arbol;
-    string nombreFile="C:\\Users\\mbarb\\Escritorio\\Parcial2Programacion-AVL\\";
-    string nombreIgnore="C:\\Users\\mbarb\\Escritorio\\Parcial2Programacion-AVL\\";
+
+    // Debe colocarse el path del archivo ya que sino no se abre.
+    string nombreFile="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/";
+    string nombreIgnore="/Users/mussa/Documents/Universidad/Programacion_III/Parcial2Programacion-AVL/";
     int contadorPalabra = 0, contadorLetra = 0, contadorLineas = 0;
     int aux;
     string aux_comandos,aux_comandos2;
-    ifstream prueba_error;
     aux_comandos=argv[1];
     aux_comandos2=nombreFile+aux_comandos;
 
-
+    /*
+     * El primer argumento de la consola debe ser el archivo ya que sino, el programa simplemente no arrancara.
+     */
     try{
         rellenarArbol(arbol,contadorPalabra,contadorLetra,contadorLineas,aux_comandos2);
     }
@@ -55,6 +58,8 @@ int main(int argc, char ** argv) {
            }catch(std::invalid_argument &error){
                 palabras(0, arbol);
            }catch(std::logic_error &error){
+               palabras(0, arbol);
+           }catch(exception &error){
                palabras(0, arbol);
            }
        }
