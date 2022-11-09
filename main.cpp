@@ -53,13 +53,16 @@ int main(int argc, char ** argv) {
 
        if(aux_comandos=="palabras"){
            try {
+               if(i+1 >= argc){
+                   throw 404;
+               }
                aux = stoi(argv[i + 1]);
                palabras(aux, arbol);
            }catch(std::invalid_argument &error){
                 palabras(0, arbol);
            }catch(std::logic_error &error){
                palabras(0, arbol);
-           }catch(exception &error){
+           }catch(int &error){
                palabras(0, arbol);
            }
        }
@@ -85,6 +88,9 @@ int main(int argc, char ** argv) {
 
         if(aux_comandos=="ocurrencias"){
             try {
+                if(i+1 >= argc){
+                    throw 404;
+                }
                 arbol.generarLista(arregloLista);
                 aux = stoi(argv[i + 1]);
                 ocurrencias(aux, arbol, arregloLista, maxOcurrencias);
@@ -92,7 +98,8 @@ int main(int argc, char ** argv) {
                 ocurrencias(0, arbol, arregloLista, maxOcurrencias);
             }catch(std::logic_error &error){
                 ocurrencias(0, arbol, arregloLista, maxOcurrencias);
-
+            }catch(int &error){
+                ocurrencias(0, arbol, arregloLista, maxOcurrencias);
             }
         }
 
