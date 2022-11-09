@@ -23,6 +23,9 @@ void rellenarArbol(ArbolBinarioAVL<string>& arbol, int&contadorPalabra,int &cont
                 if((renglon[i] >= 65 && renglon[i] <= 90) || (renglon[i] >= 97 && renglon[i] <= 122)){
                     contadorLetra++;
                     auxiliar.push_back(tolower(renglon[i]));
+                }else if((int) renglon[i] == -61 || (int) renglon[i] == -79){
+                    contadorLetra--;
+                    auxiliar.push_back(tolower(renglon[i]));
                 }else if(auxiliar != ""){
                     contadorPalabra++;
                     arbol.put(auxiliar);
